@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 721263615}
   - component: {fileID: 721263614}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 1055178501}
   - component: {fileID: 1055178506}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Dog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,6 +714,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 1604733375}
   - {fileID: 1055178505}
   - {fileID: 721263619}
-  - {fileID: 1604733375}
