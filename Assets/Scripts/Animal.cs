@@ -5,14 +5,15 @@ using System;
 using Unity.VisualScripting;
 public class Animal : MonoBehaviour
 {
-    public string animalName
+    private string _animalName = "animal";
+    public string AnimalName
     {
-        get { return animalName; }
+        get { return _animalName; }
         set
         {
             if (value.Length > 10)
                 Debug.LogError("name too long!");
-            else animalName = value;
+            else _animalName = value;
         }
     }
     protected float jumpImpulse;
@@ -25,12 +26,22 @@ public class Animal : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        AnimalName = "";
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
             Jump();
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            AnimalName = "LengthLongerThan10";
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            AnimalName = gameObject.name;
+            Debug.Log(AnimalName);
+        }
     }
 
 }
